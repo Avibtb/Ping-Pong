@@ -1,6 +1,6 @@
-var ball = document.getElementById('ball');
-var rod1 = document.getElementById('#obstacle1');
-var rod2 = document.getElementById('obstacle2');
+var ball = document.querySelector('#ball');
+var rod1 = document.querySelector('#obstacle1');
+var rod2 = document.querySelector('#obstacle2');
 
 
 const storeName = "PPName";
@@ -13,8 +13,8 @@ let score,
     maxScore,
     movement,
     rod,
-    ballSpeedX = 2,
-    ballSpeedY = 2;
+    ballSpeedX = 4,
+    ballSpeedY = 4;
 
 let gameOn = false;
 
@@ -81,7 +81,7 @@ function storeWin(rod, score) {
 
 
 window.addEventListener('keypress', function () {
-    let rodSpeed = 20;
+    let rodSpeed = 30;
 
     let rodRect = rod1.getBoundingClientRect();
 
